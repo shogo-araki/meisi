@@ -237,6 +237,12 @@
     font-weight:600;
     margin-top:6px;
   }
+  .hero-meta a{
+    color:var(--blue);
+    border-bottom:1px solid transparent;
+    transition:border-color 0.15s ease;
+  }
+  .hero-meta a:hover{ border-bottom-color:var(--blue); }
 
   /* ---------- about ---------- */
   .about-lead{
@@ -425,6 +431,16 @@
     border-top:1px solid var(--line);
     margin-top:20px;
   }
+  footer a{
+    color:var(--blue);
+    border-bottom:1px solid transparent;
+    transition:border-color 0.15s ease;
+  }
+  footer a:hover{ border-bottom-color:var(--blue); }
+  footer .footer-sep{
+    margin:0 10px;
+    color:var(--line);
+  }
 </style>
 </head>
 <body>
@@ -503,6 +519,7 @@
       <div>実務経験<strong>5年+</strong></div>
       <div>関わってきた業種<strong>製造・流通・教育 ほか</strong></div>
       <div>対応範囲<strong>要件定義〜運用保守</strong></div>
+      <div>Zenn<strong><a href="https://zenn.dev/nerisakana" target="_blank" rel="noopener noreferrer">zenn.dev/nerisakana</a></strong></div>
     </div>
   </header>
 
@@ -761,7 +778,7 @@
     </div>
   </section>
 
-  <footer>© S.A — PORTFOLIO / SYSTEM ENGINEER</footer>
+  <footer>© S.A — PORTFOLIO / SYSTEM ENGINEER<span class="footer-sep">|</span><a href="https://zenn.dev/nerisakana" target="_blank" rel="noopener noreferrer">Zenn: zenn.dev/nerisakana</a></footer>
 </div>
 
 </body>
