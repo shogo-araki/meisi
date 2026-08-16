@@ -422,6 +422,44 @@
     white-space:nowrap;
   }
 
+  /* ---------- links ---------- */
+  .links-list{ margin-top:4px; }
+  .link-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .link-row:first-child{border-top:1px solid var(--line);}
+  .link-row-main{
+    display:flex;
+    align-items:baseline;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .link-label{
+    font-size:15px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .link-url{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:13px;
+    color:var(--blue);
+    border-bottom:1px solid transparent;
+    transition:border-color 0.15s ease;
+  }
+  .link-row a.link-url{ display:inline-block; }
+  .link-row a.link-url:hover{ border-bottom-color:var(--blue); }
+  .link-arrow{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:13px;
+    color:var(--muted-2);
+    flex-shrink:0;
+  }
+
   footer{
     padding:50px 0 44px;
     text-align:center;
@@ -459,6 +497,7 @@
     <span class="rail-via" style="top:3880px;"></span>
     <span class="rail-via" style="top:4720px;"></span>
     <span class="rail-via" style="top:5280px;"></span>
+    <span class="rail-via" style="top:5520px;"></span>
   </div>
 
   <header class="hero wrap">
@@ -519,14 +558,13 @@
       <div>実務経験<strong>5年+</strong></div>
       <div>関わってきた業種<strong>製造・流通・教育 ほか</strong></div>
       <div>対応範囲<strong>要件定義〜運用保守</strong></div>
-      <div>Zenn<strong><a href="https://zenn.dev/nerisakana" target="_blank" rel="noopener noreferrer">zenn.dev/nerisakana</a></strong></div>
     </div>
   </header>
 
   <section id="about" class="wrap">
     <div class="sheet-head">
       <div>
-        <span class="sheet-tag"><b>SHEET 01</b> / 06 — ABOUT</span>
+        <span class="sheet-tag"><b>SHEET 01</b> / 07 — ABOUT</span>
         <h2>何を作るかの整理から、実装まで</h2>
       </div>
     </div>
@@ -542,7 +580,7 @@
   <section id="strengths" class="wrap">
     <div class="sheet-head">
       <div>
-        <span class="sheet-tag"><b>SHEET 02</b> / 06 — STRENGTHS</span>
+        <span class="sheet-tag"><b>SHEET 02</b> / 07 — STRENGTHS</span>
         <h2>得意なこと</h2>
       </div>
       <span class="sheet-meta">4 ITEMS</span>
@@ -571,7 +609,7 @@
   <section id="works" class="wrap">
     <div class="sheet-head">
       <div>
-        <span class="sheet-tag"><b>SHEET 03</b> / 06 — WORKS</span>
+        <span class="sheet-tag"><b>SHEET 03</b> / 07 — WORKS</span>
         <h2>代表的な実績</h2>
       </div>
       <span class="sheet-meta">4 CASES</span>
@@ -651,7 +689,7 @@
   <section id="history" class="wrap">
     <div class="sheet-head">
       <div>
-        <span class="sheet-tag"><b>SHEET 04</b> / 06 — CAREER</span>
+        <span class="sheet-tag"><b>SHEET 04</b> / 07 — CAREER</span>
         <h2>これまでの歩み</h2>
       </div>
       <span class="sheet-meta">7 ENTRIES</span>
@@ -713,7 +751,7 @@
   <section id="skills" class="wrap">
     <div class="sheet-head">
       <div>
-        <span class="sheet-tag"><b>SHEET 05</b> / 06 — SKILLS</span>
+        <span class="sheet-tag"><b>SHEET 05</b> / 07 — SKILLS</span>
         <h2>できること</h2>
       </div>
       <span class="sheet-meta">19 ITEMS</span>
@@ -765,7 +803,7 @@
   <section id="qualifications" class="wrap">
     <div class="sheet-head">
       <div>
-        <span class="sheet-tag"><b>SHEET 06</b> / 06 — QUALIFICATIONS</span>
+        <span class="sheet-tag"><b>SHEET 06</b> / 07 — QUALIFICATIONS</span>
         <h2>保有資格</h2>
       </div>
       <span class="sheet-meta">4 CERTS</span>
@@ -778,7 +816,26 @@
     </div>
   </section>
 
-  <footer>© S.A — PORTFOLIO / SYSTEM ENGINEER<span class="footer-sep">|</span><a href="https://zenn.dev/nerisakana" target="_blank" rel="noopener noreferrer">Zenn: zenn.dev/nerisakana</a></footer>
+  <section id="links" class="wrap">
+    <div class="sheet-head">
+      <div>
+        <span class="sheet-tag"><b>SHEET 07</b> / 07 — LINKS</span>
+        <h2>外部リンク</h2>
+      </div>
+      <span class="sheet-meta">1 LINK</span>
+    </div>
+    <div class="links-list">
+      <div class="link-row">
+        <div class="link-row-main">
+          <span class="link-label">Zenn</span>
+          <a class="link-url" href="https://zenn.dev/nerisakana" target="_blank" rel="noopener noreferrer">zenn.dev/nerisakana</a>
+        </div>
+        <span class="link-arrow">↗</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>© S.A — PORTFOLIO / SYSTEM ENGINEER</footer>
 </div>
 
 </body>
